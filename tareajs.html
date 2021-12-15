@@ -22,15 +22,59 @@
     <section>
         <h2>Altura del triángulo isósceles</h2>
         <form>
-            <label for="in1">Lado 1:</label>
-            <input id="in1" type="number"/>
-            <label for="in2">Lado 2:</label>
-            <input id="in2" type="number"/>
-            <label for="in3">Lado 3:</label>
-            <input id="in3" type="number"/>
-
-            <button type="button" onclick="altuIsos()">Calcular</button> 
+            <label for="in1">
+                <span>Lado 1:</span>  
+                <input id="in1" type="number" placeholder="Ej: 4"/>
+            </label>
+            <label for="in2">
+                <span>Lado 2:</span>
+                <input id="in2" type="number" placeholder="Ej: 4"/> 
+            </label>
+            <label for="in3">
+                <span>Lado 3:</span>
+                <input id="in3" type="number" placeholder="Ej:3">
+            </label>            
+        
+            <button type="button" onclick="altuIsos()">Calcular</button>
         </form>
+          
+            <form action="">
+                <fieldset>
+                    <legend>Calendario Platzi</legend>
+                    <label for="hora">
+                        <span>Hora:</span>
+                        <input type="time" id="hora" name="hora">
+                    </label>
+
+                    <label for="dia">
+                        <span>Día:</span>
+                        <input type="date" id="dia" name="dia">
+                    </label>
+
+                    <label for="semana">
+                        <span>Semana:</span>
+                        <input type="week" id="semana" name="semana">
+                    </label>
+
+                    <label for="mes">
+                        <span>Mes:</span>
+                        <input type="month" id="mes" name="mes">
+                    </label>
+
+                    <input type="submit">
+                </fieldset>             
+            </form>
+
+            <form action="">
+                <fieldset>
+                    <legend>Fecha tipo 2</legend>
+                    <label for="calendario">
+                        <span>Calendario:</span>
+                        <input type="datetime-local" id="calendario" name="calendario">
+                    </label>
+                    <input type="submit">
+                </fieldset>
+            </form>        
         <p>Gracias por visitar mi página</p>
     </section>
     </main>
