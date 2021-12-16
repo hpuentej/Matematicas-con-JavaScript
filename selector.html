@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Figura Geométrica</title>
+    <!-- <link rel="stylesheet" href="./normalize.css"> -->
+    <link rel="stylesheet" href="./selector.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">¿Cuál es la figura en estudio?</h1>
+        <nav>
+            <ul class="main-nav">
+                <li class="main-nav__item"><a href="">Cuadrado</a></li>
+                <li class="main-nav__item"><a href="">Triángulo</a></li>
+                <li class="main-nav__item"><a href="">Círculo</a></li>
+                <li class="main-nav__item"><a href="">Hexágono</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <ul>               
+                <li class=""><a href=""></a></li>
+                <li class=""><a href=""></a></li>
+                <li class=""><a href=""></a></li>
+                <li class=""><a href=""></a></li>
+            </ul>
+        </section>
+
+
+        <fieldset>
+            <legend id="leyenda"> Input List (Recomendado para elegir entre muchas opciones)</legend>  
+            <form action="">
+                <input list="figGeo" id="figGeometrica">
+                <datalist id="figGeo">
+                    <option value="Cuadrado"></option>
+                    <option value="Triángulo"></option>
+                    <option value="Círculo"></option>
+                </datalist>
+                <button type="submit" onclick="figGeom()">Ir</button>
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <legend id="leyenda"> Select (Recomendado para elegir entre pocas opciones)</legend>  
+            <form action="">
+                <select name="figuras" id="">
+                    <option value="Cuadrado">Cuadrado</option>
+                    <option value="Triángulo">Triángulo</option>
+                    <option value="Círculo">Círculo</option>
+                </select>
+                <button type="button" onclick="figGeom()">Ir</button>
+            </form>
+        </fieldset>
+        <script src="./selector.js"></script>
+    </main>
+</body>
+</html>
